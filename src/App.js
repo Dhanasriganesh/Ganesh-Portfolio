@@ -33,10 +33,10 @@ function App() {
         <Experience/>
         <Projects/> 
         <Education />
-        
+        <Contact/>
         </Wrapper>
         
-        <Contact/>
+        
         <Footer/>
       </Body>
     </Router>

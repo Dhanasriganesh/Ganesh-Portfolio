@@ -65,7 +65,7 @@ export const projects = [
     id: 1,
     title: "MBooks",
     description: "MBooks is a digital library web application.",
-    image: "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
+    image: "https://dhanushraghava2004.github.io/MBOOKS/image/m1ru22.ico",
     tags: ["HTML", "CSS", "STYLED COMPONENTS", "React Js", "SQL", "Node Js", "Express Js"],
     category: "web app",
     link: "https://dhanushraghava2004.github.io/MBOOKS/"
@@ -74,7 +74,7 @@ export const projects = [
     id: 2,
     title: "INNOVTUITIONS",
     description: "Developed a comprehensive website for Home Tuitions.",
-    image: "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
+    image: "https://tuitions-two.vercel.app/static/media/imagee1.3b27310d83071a0be3be.png",
     tags: ["HTML", "CSS", "STYLED COMPONENTS", "React Js", "SQL", "Node Js", "Express Js"],
     category: "web app",
     link: "https://tuitions-two.vercel.app/"
@@ -83,7 +83,7 @@ export const projects = [
     id: 3,
     title: "SSR CHEM",
     description: "Developed a website for a Chemical Industry.",
-    image: "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
+    image: "https://ssrchem.vercel.app/static/media/logo.d21094c497be2866076e.png",
     tags: ["React Js", "TailwindCSS", "JSX", "SQL", "Node Js", "Express Js"],
     category: "web app",
     link: "https://ssrchem.vercel.app"
@@ -92,7 +92,7 @@ export const projects = [
     id: 4,
     title: "GARUDA MOTORS",
     description: "Developed a website for a bike showroom.",
-    image: "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkqgi_YDRvWM-21vR3ewjuoZ3MN13achFhDQ&s",
     tags: ["React Js", "TailwindCSS", "JSX", "SQL", "Node Js", "Express Js"],
     category: "web app",
     link: "https://garudamotors.vercel.app"
@@ -101,7 +101,7 @@ export const projects = [
     id: 5,
     title: "MATCH-YOUR-FIT (In Progress)",
     description: "Developing a fashion shopping platform.",
-    image: "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
+    image: "https://match-your-fit-fashionn.vercel.app/_next/image?url=%2FImages%2Ffashion1.png&w=384&q=75",
     tags: ["Next Js", "JSX", "TailwindCSS", "Node Js", "Express Js", "SQL"],
     category: "web app",
     link: "https://match-your-fit-fashionn.vercel.app/main"

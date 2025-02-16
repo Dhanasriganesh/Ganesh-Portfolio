@@ -2,10 +2,11 @@ import React from 'react'
 import styled from "styled-components";
 import {Bio} from "../../data/constants";
 import Typewriter from "typewriter-effect";
-import {Title,TextLoop,Span,SubTitle} from './Index1.styles';
-import {HeroBg,ResumeButton} from './Index1.styles';
+import {Title, TextLoop, Span, SubTitle} from './Index1.styles';
+import {HeroBg, ResumeButton} from './Index1.styles';
 import HeroImg from "../../images/myimg.jpg";
 import HeroBgAnimation from "../HeroBgAnimation";
+
 const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
   display: flex;
@@ -19,7 +20,6 @@ const HeroContainer = styled.div`
     padding: 32px 16px;
   }
   z-index: 1;
-
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
 `;
 
@@ -35,6 +35,7 @@ const HeroInnerContainer = styled.div`
     flex-direction: column;
   }
 `;
+
 const HeroLeftContainer = styled.div`
   width: 100%;
   order: 1;
@@ -93,43 +94,67 @@ const Image = styled.img`
   }
 `;
 
-
+// Styled Button for Startup Journey
+const StartupButton = styled.a`
+  display: inline-block;
+  background: linear-gradient(225deg, #742dd2 0%, #a832d1 100%);
+  padding: 14px 22px;
+  margin-top: 12px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  
+  &:hover {
+    background: linear-gradient(225deg, #a832d1 0%, #742dd2 100%);
+    opacity: 0.9;
+  }
+`;
 
 const Hero = () => {
   return (
     <div id="about">
       <HeroContainer>
         <HeroBg>
-          <HeroBgAnimation/>
+          <HeroBgAnimation />
         </HeroBg>
-          <HeroInnerContainer>
-            <HeroLeftContainer>
-              <Title>
-              Hi,I am <br/>
+        <HeroInnerContainer>
+          <HeroLeftContainer>
+            <Title>
+              Hi, I am <br />
               {Bio.name}
-              </Title>
-              <TextLoop>
+            </Title>
+            <TextLoop>
               With extensive
               <Span>
-              <Typewriter
-                options={{
-                  settings:Bio.roles,
-                  autoStart:true,
-                  loop:true,
-                }}/>
+                <Typewriter
+                  options={{
+                    
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
               </Span>
-              </TextLoop>
-              <SubTitle>{Bio.description}</SubTitle>
-              <ResumeButton href={Bio.resume} target="display"> Check Resume </ResumeButton>
-              </HeroLeftContainer>
-            <HeroRightContainer>
-              <Image src={HeroImg} alt="Hero"/>
-            </HeroRightContainer>
-          </HeroInnerContainer>
-       
+            </TextLoop>
+            <SubTitle>{Bio.description}</SubTitle>
+
+            {/* Startup Journey Button */}
+            <StartupButton href="http://innovimagine.com/" target="_blank">
+              My Startup Journey
+            </StartupButton>
+
+          </HeroLeftContainer>
+          <HeroRightContainer>
+            <Image src={HeroImg} alt="Hero" />
+          </HeroRightContainer>
+        </HeroInnerContainer>
       </HeroContainer>
     </div>
   )
 }
 
-export default Hero
+export default Hero;
